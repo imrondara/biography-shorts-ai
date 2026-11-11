@@ -1,0 +1,26 @@
+*{box-sizing:border-box}
+:root{color-scheme:dark;--bg:#101014;--panel:#1b1b22;--line:#34343d;--yellow:#ffd447;--muted:#a4a4ad}
+body{margin:0;background:radial-gradient(ellipse at top,#25232a 0,#101014 55%);color:#f5f3ee;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.shell{width:min(100% - 28px,720px);margin:0 auto;padding:34px 0 28px}
+.top{padding:12px 2px 24px;border-bottom:1px solid var(--line);margin-bottom:20px}
+.eyebrow,small,footer{font-size:10px;letter-spacing:2px;color:var(--muted)}
+h1{font-size:clamp(30px,8vw,54px);line-height:.98;letter-spacing:-2px;margin:14px 0 8px;font-weight:900}
+h1 span{color:var(--yellow)}
+.sub{font-size:11px;letter-spacing:3px;color:var(--muted);margin:0}
+.panel{background:linear-gradient(145deg,#202027,#18181e);border:1px solid var(--line);border-radius:16px;padding:20px;margin:14px 0}
+.step{font-size:12px;color:var(--yellow);font-weight:800;letter-spacing:1px;margin-bottom:18px}
+.step span{color:#f5f3ee;margin-left:8px}
+label{display:block;font-size:12px;color:#c5c3ca;margin:14px 0 7px}
+input,select{width:100%;padding:14px 13px;background:#101015;border:1px solid #41414b;border-radius:10px;color:#fff;font-size:16px;outline:none}
+input:focus,select:focus{border-color:var(--yellow)}
+.settings{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.settings div{background:#111116;border:1px solid #34343d;border-radius:10px;padding:13px}
+.settings small{display:block;font-size:9px;margin-bottom:7px}
+.settings strong{font-size:14px}
+button{width:100%;border:0;border-radius:12px;background:var(--yellow);color:#17130a;padding:17px;font-size:14px;font-weight:900;letter-spacing:.6px;margin-top:6px}
+button span{float:right;font-size:20px;line-height:14px}
+.status{color:var(--muted);font-size:12px;text-align:center;min-height:20px}
+.result{background:#15151b;border:1px solid var(--line);border-radius:14px;padding:18px;margin-top:18px}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;color:#e7e4dc;font-size:12px;line-height:1.6}
+.hidden{display:none}
+footer{text-align:center;margin-top:28px;font-size:9px}

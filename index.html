@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101014">
+  <title>Biography Shorts AI Studio</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="top">
+      <div class="eyebrow">AUTOMATED DOCUMENTARY PRODUCTION</div>
+      <h1>BIOGRAPHY <span>SHORTS</span></h1>
+      <p class="sub">AI STUDIO · PROJECT 001</p>
+    </header>
+
+    <section class="panel">
+      <div class="step">01 <span>PERSON INFORMATION</span></div>
+      <label for="person">ชื่อบุคคล</label>
+      <input id="person" placeholder="เช่น Muhammad Ali" autocomplete="off">
+      <label for="category">ประเภทบุคคล</label>
+      <select id="category">
+        <option>นักกีฬา</option>
+        <option>นักร้อง</option>
+        <option>นักแสดง</option>
+        <option>นักธุรกิจ</option>
+        <option>บุคคลสำคัญในประวัติศาสตร์</option>
+        <option>บุคคลทั่วไป</option>
+      </select>
+      <label for="tone">อารมณ์การเล่า</label>
+      <select id="tone">
+        <option>สารคดีเข้มข้น</option>
+        <option>สร้างแรงบันดาลใจ</option>
+        <option>ดราม่าและสะเทือนอารมณ์</option>
+        <option>ลึกลับน่าติดตาม</option>
+      </select>
+    </section>
+
+    <section class="panel">
+      <div class="step">02 <span>VIDEO SETTINGS</span></div>
+      <div class="settings">
+        <div><small>DURATION</small><strong>60 SEC</strong></div>
+        <div><small>FORMAT</small><strong>9:16</strong></div>
+        <div><small>VOICE</small><strong>THAI</strong></div>
+        <div><small>EXPORT</small><strong>1080 × 1920</strong></div>
+      </div>
+    </section>
+
+    <button id="generate">CREATE PRODUCTION BRIEF <span>→</span></button>
+    <p id="status" class="status" aria-live="polite">ระบบพร้อมรับข้อมูล</p>
+    <section id="result" class="result hidden">
+      <div class="step">03 <span>JOB RESULT</span></div>
+      <pre id="output"></pre>
+    </section>
+    <footer>STAGE 1 · INTERFACE + API FOUNDATION</footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
